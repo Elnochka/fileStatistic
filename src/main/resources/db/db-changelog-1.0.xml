@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create_lines" author="db@user">
+        <createTable tableName="lines_file">
+            <column name="line_id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="line_name" type="varchar(300)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create_files" author="db@user">
+        <createTable tableName="files">
+            <column name="file_id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="longest_word" type="varchar(150)">
+                <constraints nullable="false" />
+            </column>
+            <column name="shortest_word" type="varchar(150)">
+                <constraints nullable="false" />
+            </column>
+            <column name="duplicate" type="varchar(300)">
+                <constraints nullable="false" />
+            </column>
+            <column name="lentgh_line" type="int"/>
+            <column name="length_average_word" type="int"/>
+            <column name="line_id" type="int"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="tag-1.0" author="db@user">
+        <tagDatabase tag="1.0" />
+    </changeSet>
+
+</databaseChangeLog>
