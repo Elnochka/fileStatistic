@@ -2,6 +2,6 @@
 средней длины слова, длины строки, дубликатов слов.
 Она работает с MariaDb базой данных, на порту 3307.
 После скачивания папки вам нужно при помощи командной строки перейти в установленную папку и ввести
-mvn clean package   - создается jar файл
+mvn clean package   - создается папка target с jar файлом
 mvn liquibase:update   - создается БД с таблицами
-java -jar .\<folder name>\target\statisticfile-jar-with-dependencies.jar <file name>   - запуск jar файла
+java -jar .\target\statisticfile-jar-with-dependencies.jar <file name(например d:\\nnnnnn.txt)>   - запуск jar файла
