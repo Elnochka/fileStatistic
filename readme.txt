@@ -4,4 +4,4 @@
 После скачивания папки вам нужно при помощи командной строки перейти в установленную папку и ввести
 mvn clean package   - создается папка target с jar файлом
 mvn liquibase:update   - создается БД с таблицами
-java -jar .\target\statisticfile-jar-with-dependencies.jar <file name(например d:\\nnnnnn.txt)>   - запуск jar файла
+java -jar .\target\statisticfile-jar-with-dependencies.jar <file name(например d:\\otherfile.txt)>   - запуск jar файла
