@@ -1,0 +1,11 @@
+As you have seen the Spring Framework is focused on simplifying enterprise Java development through DI
+AOP and boilerplate reduction Even if that were all Spring did
+it would be worth using But there
+is more to Spring than meets the eye
+Within the Spring Framework proper you will find several ways
+that Spring can ease
+Java development. But beyond the Spring Framework is a greater ecosystem of projects
+that build on the core framework extending Spring into areas such as web services REST mobile and NoSQL
+Lets first break down the core Spring Framework to see what it brings to the
+table Then well expand our sights to review the other members of the greater
+Spring portfolio
